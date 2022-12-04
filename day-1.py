@@ -2,11 +2,11 @@ import os
 
 from utils import *
 
-def getHighestAmoutofCalories():
+def get_highest_amout_of_calories():
 
   with open('1/input') as f:
 
-    elfsWithCalories = dataToArray(f)
+    elfsWithCalories = data_to_array(f)
     totalCaloriesByElf = []
     total = 0
 
@@ -23,7 +23,7 @@ def getHighestAmoutofCalories():
     #Part 2 Solution
     return sum(sortedCalories[:3])
 
-solution = getHighestAmoutofCalories()
+solution = get_highest_amout_of_calories()
 
 print(solution)
 

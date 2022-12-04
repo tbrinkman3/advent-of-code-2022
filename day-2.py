@@ -20,7 +20,7 @@ def play(foe, you):
   result = rps[foe][you]
   return result
 
-def getRoundScore(round):
+def get_round_score(round):
   split = round.split()
   foe = foeMoves.index(split[0])
   you = youMoves.index(split[1])
@@ -30,7 +30,7 @@ def getRoundScore(round):
 
   return roundValue + moveValue
 
-def getRoundScoreWithFullInstruction(round):
+def get_round_score_with_full_instruction(round):
   split = round.split()
   foe = foeMoves.index(split[0])
   neededOutcomeScore = roundScores[youMoves.index(split[1])]
@@ -38,14 +38,14 @@ def getRoundScoreWithFullInstruction(round):
 
   return neededOutcomeScore + yourMoveScore
 
-def playRounds(rounds):
+def play_rounds(rounds):
   score = 0
   for round in rounds:
-    score += getRoundScore(round)
+    score += get_round_score(round)
 
   print(score)
 
 with open('2/input') as f:
-  rounds = dataToArray(f)
-  playRounds(rounds)
+  rounds = data_to_array(f)
+  play_rounds(rounds)
 
