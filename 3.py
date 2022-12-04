@@ -5,7 +5,6 @@ from utils import *
 
 letterValues = "_abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-
 def split_rucksack(rs):
   #odd number
   size = len(rs)
@@ -48,20 +47,11 @@ def sum_priority_of_badge_type_in_rucksacks(rucksacks):
     p+=3
   return sum
 
-# with open('3/input') as f:
-#   arrInput = data_to_array(f)
-
-#   print(sum_priority_of_badge_type_in_rucksacks(arrInput))
-#   print(sum_priority_of_item_types_in_rucksacks(arrInput))
-
 def solve():
   data = get_puzzle_input(3)
   arrInput = data.split()
 
   print(sum_priority_of_badge_type_in_rucksacks(arrInput))
   print(sum_priority_of_item_types_in_rucksacks(arrInput))
-
-
-
 
 solve()
