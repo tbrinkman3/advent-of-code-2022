@@ -1,5 +1,7 @@
 import requests
 import os
+import time
+import timeit
 
 from dotenv import load_dotenv
 
@@ -23,4 +25,15 @@ def get_puzzle_input(day):
 
   return response.text
 
+def benchmark(func, num):
+  totalTime = 0
+  for i in range(num):
+    totalTime += timeExecution(func)
+  average = totalTime / num
+  print(f"Average Execution Time of {average * 10**6} microseconds")
 
+
+def timeExecution(func):
+  start = time.perf_counter()
+  func()
+  return time.perf_counter() - start

@@ -2,7 +2,7 @@ import os
 
 from utils import *
 
-def findLow(p1, p2):
+def find_low(p1, p2):
   if(p1<p2):
     return 'p1'
   elif(p2<p1):
@@ -10,7 +10,7 @@ def findLow(p1, p2):
   else:
     return '*'
 
-def findHigh(p1,p2):
+def find_high(p1,p2):
   if(p1>p2):
     return 'p1'
   elif(p2>p1):
@@ -19,10 +19,27 @@ def findHigh(p1,p2):
     return '*'
 
 def has_range_contained(p1,p2):
-  low = findLow(p1[0],p2[0])
-  high = findHigh(p1[1],p2[1])
+  low = find_low(p1[0],p2[0])
+  high = find_high(p1[1],p2[1])
 
   return True if (low == high or (high=="*" or low == "*")) else False
+
+def has_range_overlap(p1,p2):
+  hasRangeContained = has_range_contained(p1,p2)
+
+  if(not hasRangeContained):
+    low = find_low(p1[0],p2[0])
+    high = find_high(p1[1],p2[1])
+
+    lowPairHighValue = p1[1] if low =='p1' else p2[1]
+    highPairLowValue = p1[0] if high == 'p1' else p2[0]
+
+    if(lowPairHighValue >= highPairLowValue):
+      return True
+    else:
+      return False
+
+  return True
 
 def cleanup_pairings(input, compareFunc):
   count = 0
@@ -35,31 +52,22 @@ def cleanup_pairings(input, compareFunc):
 
     if(hasRangeOverlapOrContained):
       count+=1
-  print(count)
+  return count
 
-def has_range_overlap(p1,p2):
-  hasRangeContained = has_range_contained(p1,p2)
+def solve_part_1():
+  with open('inputs/4') as f:
+    input = data_to_array(f)
+    return cleanup_pairings(input, has_range_contained)
 
-  if(not hasRangeContained):
-    print(p1,p2)
-    # get the low
-    low = findLow(p1[0],p2[0])
-    high = findHigh(p1[1],p2[1])
+def solve_part_2():
+  with open('inputs/4') as f:
+    input = data_to_array(f)
+    return cleanup_pairings(input, has_range_overlap)
 
-    lowPairHighValue = p1[1] if low =='p1' else p2[1]
-    highPairLowValue = p1[0] if high == 'p1' else p2[0]
+print('Part 1')
+print(solve_part_1())
+print('Part 2')
+print(solve_part_2())
 
-    if(lowPairHighValue >= highPairLowValue):
-      return True
-    else:
-      return False
-
-  return True
-
-def solve():
-  data = get_puzzle_input(4)
-  input = data.split()
-  #print(cleanup_pairings(input, has_range_contained))
-  print(cleanup_pairings(input, has_range_overlap))
-
-solve()
+benchmark(solve_part_1, 100)
+benchmark(solve_part_2, 100)
