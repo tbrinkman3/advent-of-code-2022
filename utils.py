@@ -32,7 +32,6 @@ def benchmark(func, num):
   average = totalTime / num
   print(f"Average Execution Time of {average * 10**6} microseconds")
 
-
 def timeExecution(func):
   start = time.perf_counter()
   func()

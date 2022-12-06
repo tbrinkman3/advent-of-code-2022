@@ -6,7 +6,7 @@ def parse_input(input):
   content = input.readlines()
 
   split = content.index('\n')
-  base = split -2
+  base = split - 2
   base_size = int((len(content[base]) / 4))
   stacks = [[] for i in range(base_size)]
   while base > -1:
