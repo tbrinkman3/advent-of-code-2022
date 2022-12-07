@@ -1,0 +1,44 @@
+INFO:root:Average Execution Time of 1418.2559290202335 microseconds
+INFO:root:Average Execution Time of 6118.0772917578 microseconds
+INFO:root:Average Execution Time of 1351.4436106197536 microseconds
+INFO:root:Average Execution Time of 6438.834381988272 microseconds
+ERROR:root:hey
+INFO:root:Average Execution Time of 1394.8246906511486 microseconds
+ERROR:root:hey
+INFO:root:Average Execution Time of 7010.206251288764 microseconds
+INFO:root:
+INFO:root:Average Execution Time of 1436.8028315948322 microseconds
+INFO:root:
+INFO:root:Average Execution Time of 6744.8204004904255 microseconds
+12/06/2022 05:35:05 PM Average Execution Time of 1406.6754572559148 microseconds
+12/06/2022 05:35:06 PM Average Execution Time of 6902.757486095652 microseconds
+12/06/2022 05:35:42 PM Average Execution Time of 1427.577708964236 microseconds ->
+12/06/2022 05:35:43 PM Average Execution Time of 6868.536790716462 microseconds ->
+12/06/2022 05:36:08 PM -> Average Execution Time of 1440.5499520944431 microseconds
+12/06/2022 05:36:09 PM -> Average Execution Time of 6825.18080167938 microseconds
+12/06/2022 09:45:02 PM -> Average Execution Time of 68.41739290393889 microseconds
+12/06/2022 09:45:02 PM -> Average Execution Time of 6281.712521449663 microseconds
+12/06/2022 09:49:05 PM -> Average Execution Time of 62.710013007745154 microseconds
+12/06/2022 09:49:06 PM -> Average Execution Time of 6116.724876919761 microseconds
+12/06/2022 10:11:36 PM -> Average Execution Time of 133.7748480727896 microseconds
+12/06/2022 10:11:36 PM -> Average Execution Time of 0.2636009594425559 microseconds
+12/06/2022 10:11:48 PM -> Average Execution Time of 124.01737796608359 microseconds
+12/06/2022 10:11:48 PM -> Average Execution Time of 0.138147734105587 microseconds
+12/06/2022 10:11:55 PM -> Average Execution Time of 122.10880813654512 microseconds
+12/06/2022 10:11:55 PM -> Average Execution Time of 0.14475081115961075 microseconds
+12/06/2022 10:16:30 PM -> Average Execution Time of 34722.74744359311 microseconds
+12/06/2022 10:16:38 PM -> Average Execution Time of 81611.78092181217 microseconds
+12/06/2022 10:17:15 PM -> Average Execution Time of 1397.065999917686 microseconds
+12/06/2022 10:17:15 PM -> Average Execution Time of 6354.572328855284 microseconds
+12/06/2022 10:18:12 PM -> Average Execution Time of 22274.7466590954 microseconds
+12/06/2022 10:18:18 PM -> Average Execution Time of 59002.55047075916 microseconds
+12/06/2022 10:18:23 PM -> Average Execution Time of 805.2105456590652 microseconds
+12/06/2022 10:18:23 PM -> Average Execution Time of 2022.0805506687614 microseconds
+12/06/2022 10:18:48 PM -> Average Execution Time of 735.4637031676248 microseconds
+12/06/2022 10:18:49 PM -> Average Execution Time of 1609.7777080722153 microseconds
+12/06/2022 10:19:27 PM -> Average Execution Time of 1516.9965737732127 microseconds
+12/06/2022 10:19:28 PM -> Average Execution Time of 6821.893028682098 microseconds
+12/06/2022 10:19:39 PM -> Average Execution Time of 749.9231840483844 microseconds
+12/06/2022 10:19:39 PM -> Average Execution Time of 1614.3960232147947 microseconds
+12/06/2022 10:29:07 PM -> Average Execution Time of 462.8704354399815 microseconds
+12/06/2022 10:29:07 PM -> Average Execution Time of 1800.2910603536293 microseconds

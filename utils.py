@@ -1,7 +1,7 @@
 import requests
 import os
 import time
-import timeit
+import logging
 
 from dotenv import load_dotenv
 
@@ -25,12 +25,14 @@ def get_puzzle_input(day):
 
   return response.text
 
-def benchmark(func, num):
+def benchmark(func, num, day):
+  logging.basicConfig(filename=f'benchmarks/{day}', encoding='utf-8', level=logging.INFO, format='%(asctime)s -> %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
   totalTime = 0
   for i in range(num):
     totalTime += timeExecution(func)
   average = totalTime / num
-  print(f"Average Execution Time of {average * 10**6} microseconds")
+  message = f"Average Execution Time of {average * 10**6} microseconds"
+  logging.info(message)
 
 def timeExecution(func):
   start = time.perf_counter()
